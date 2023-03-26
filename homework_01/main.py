@@ -20,7 +20,7 @@ EVEN = "even"
 PRIME = "prime"
 
 
-def filter_numbers(number_list, filter_type):
+def filter_numbers(numbers_list, filter_type):
     """
     функция, которая на вход принимает список из целых чисел,
     и возвращает только чётные/нечётные/простые числа
