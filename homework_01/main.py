@@ -24,10 +24,6 @@ def is_prime(number):
 
 
 
-#numbers_list = [1, 2, 3, 4, 5, 6, 7, 8, 11]
-#filter_type = PRIME
-
-
 def filter_numbers(numbers_list, filter_type):
     if filter_type == ODD:
         return [number for number in numbers_list if number % 2 != 0]
@@ -35,6 +31,3 @@ def filter_numbers(numbers_list, filter_type):
         return [number for number in numbers_list if number % 2 == 0]
     if filter_type == PRIME:
         return [number for number in numbers_list if (is_prime(number) is True)]
-
-
-#print(filter_numbers(numbers_list, filter_type))
