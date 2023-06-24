@@ -1,18 +1,18 @@
-{% include 'base.html' %}
+{% extends 'base.html' %}
 
-<!DOCTYPE html>
 <html>
 <head>
-<title>
-Meme Website</title>
+<title>{% block title %}
+Meme Website {%  endblock %}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="refresh" content="30" />
 
 </head>
-<body>
+<body>{% block body %}
 
 <p>Here is your meme! This will refresh in 30 seconds!</p>
 <p><img src="{{meme_pic}}"></p>
 <p>Current subreddit: {{subreddit}} </p>
+{% endblock %}
 </body>
 </html>

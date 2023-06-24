@@ -26,13 +26,14 @@ body {background-color:#ffffff;background-repeat:no-repeat;background-position:t
 p {text-align:center;font-family:Georgia, serif;font-size:30px;font-style:normal;font-weight:normal;color:#000000;background-color:#ffffff;}
 </style>
   <body>
-
+  {% block body %}
   <p>Hello, stranger!</p>
 
 
 
   </div>
   <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+  {% endblock %}
   </body>
 
 
